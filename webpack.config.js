@@ -28,6 +28,7 @@ module.exports = {
   },
   entry: ['@babel/polyfill', path.resolve(__dirname, 'src', 'webpack/index.js')],
   output: {
+    publicPath: '',
     path: path.resolve(__dirname, 'dist'),
     clean: false,
     filename: 'js/[name].[contenthash].js',
