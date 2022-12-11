@@ -182,3 +182,8 @@ input[type="submit"]:focus {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}

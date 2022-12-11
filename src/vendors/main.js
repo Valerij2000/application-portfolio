@@ -122,14 +122,6 @@
                 newvalueX = width * pageX * -1,
                 newvalueY = height * pageY * -1;
 
-            elements.addClass('transition');
-            elements.css({
-                "background-position": "calc( 50% + " + newvalueX + "px ) calc( 50% + " + newvalueY + "px )",
-            });
-
-            setTimeout(function() {
-                elements.removeClass('transition');
-            }, 300);
         })
 
         // Mobile menu
