@@ -7,6 +7,7 @@ html {
 }
 
 body {
+  min-width: 360px;
   background-color: #0ba376;
   background: -webkit-gradient(linear, left top, left bottom, from(#0b7080), to(#0ba376));
   background: linear-gradient(#0b7080, #0ba376);
