@@ -205,7 +205,6 @@
       self.toggleSubmit()
       self.focusError()
     })
-
     return this
   }
 
