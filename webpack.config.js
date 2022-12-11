@@ -10,7 +10,9 @@ const mode = process.env.NODE_ENV || 'development';
 const devMode = mode === 'development';
 const target = devMode ? 'web' : 'browserslist';
 const devtool = devMode ? 'source-map' : undefined;
-const hbsPages = fs.readdirSync('src').filter(fileName => fileName.endsWith('.hbs')).map(el => el.slice(0, -4));
+const hbsPages = fs.readdirSync('src/pages').filter(fileName => fileName.endsWith('.hbs')).map(el => el.slice(0, -4));
+const hbsPortfolioPages = fs.readdirSync('src/pages/portfolio').filter(fileName => fileName.endsWith('.hbs')).map(el => el.slice(0, -4));
+const hbsBlogPages = fs.readdirSync('src/pages/blog').filter(fileName => fileName.endsWith('.hbs')).map(el => el.slice(0, -4));
 
 module.exports = {
   mode,
@@ -35,7 +37,17 @@ module.exports = {
     ...hbsPages.map(page => new HtmlWebpackPlugin({
       minify: true,
       filename: `${page}.html`,
-      template: path.resolve(__dirname, 'src', `${page}.hbs`),
+      template: path.resolve(__dirname, 'src/pages', `${page}.hbs`),
+    })),
+    ...hbsPortfolioPages.map(page => new HtmlWebpackPlugin({
+      minify: true,
+      filename: `${page}.html`,
+      template: path.resolve(__dirname, 'src/pages/portfolio', `${page}.hbs`),
+    })),
+    ...hbsBlogPages.map(page => new HtmlWebpackPlugin({
+      minify: true,
+      filename: `${page}.html`,
+      template: path.resolve(__dirname, 'src/pages/blog', `${page}.hbs`),
     })),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash].css',
@@ -48,10 +60,9 @@ module.exports = {
     new ImageminWebpWebpackPlugin(),
     new CopyPlugin({
       patterns: [{
-          from: path.resolve(__dirname, 'src', 'vendors'),
-          to: path.resolve(__dirname, 'dist', 'vendors'),
-        },
-      ],
+        from: path.resolve(__dirname, 'src', 'vendors'),
+        to: path.resolve(__dirname, 'dist', 'vendors'),
+      }, ],
     }),
   ],
   module: {
