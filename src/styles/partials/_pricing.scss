@@ -1,0 +1,117 @@
+.fw-pricing .fw-package {
+  background-color: #333;
+  border: 2px solid #444;
+  border-radius: 15px;
+  padding: 30px 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.fw-pricing .fw-package-wrap.highlight-col .fw-package {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0 7px 12px rgba(0, 0, 0, .12);
+  -moz-box-shadow: 0 7px 12px rgba(0, 0, 0, .12);
+  -o-box-shadow: 0 7px 12px rgba(0, 0, 0, .12);
+  box-shadow: 0 7px 12px rgba(0, 0, 0, .12);
+}
+
+.fw-pricing .fw-package:hover,
+.fw-pricing .fw-package-wrap.highlight-col .fw-package:hover {
+  -webkit-transform: translateY(-9px);
+  -ms-transform: translateY(-9px);
+  -o-transform: translateY(-9px);
+  transform: translateY(-9px);
+  -webkit-box-shadow: 0 18px 24px rgba(0, 0, 0, .15);
+  -moz-box-shadow: 0 18px 24px rgba(0, 0, 0, .15);
+  -o-box-shadow: 0 18px 24px rgba(0, 0, 0, .15);
+  box-shadow: 0 18px 24px rgba(0, 0, 0, .15);
+}
+
+.fw-pricing .fw-package-wrap.highlight-col .fw-heading-row span {
+  position: relative;
+  display: inline-block;
+}
+
+.fw-pricing .fw-package-wrap.highlight-col .fw-heading-row span:after {
+  content: '';
+  height: 2px;
+  margin-top: 0;
+  background-color: #0ba376;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  right: 0;
+}
+
+.fw-pricing .fw-pricing-row {
+  padding: 30px 0 10px;
+}
+
+.fw-pricing .fw-pricing-row span {
+  display: block;
+  line-height: 1;
+  color: #f5f5f5;
+  font-size: 42px;
+}
+
+.fw-pricing .fw-pricing-row small {
+  color: #aaa;
+  display: block;
+}
+
+.fw-pricing .fw-default-row {
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.fw-pricing .fw-button-row {
+  padding: 10px 0 20px;
+}
+
+.fw-pricing .fw-price-icon-no:before {
+  content: "\f068";
+  color: #e87878;
+}
+
+.fw-pricing .fw-price-icon-yes:before {
+  content: "\f058";
+  color: #ade878;
+}
+
+/* table */
+.fw-table table {
+  width: 100%;
+  border: 1px solid #eee;
+  font-size: .875em;
+}
+
+.fw-table table tr,
+.fw-table table tr.heading-row {
+  border-bottom: 1px solid #eee;
+}
+
+.fw-table table tr:not(.heading-row):last-child {
+  border-bottom: 0;
+}
+
+.fw-table table th {
+  padding: 7px 12px;
+  border-right: 1px solid #eee;
+}
+
+.fw-table table td {
+  padding: 7px 12px;
+  border-right: 1px solid #eee;
+}
+
+.fw-table table td:last-child {
+  border-right: 0;
+}
