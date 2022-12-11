@@ -183,6 +183,14 @@ input[type="submit"]:focus {
   animation-fill-mode: both;
 }
 
+.main-logo {
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  right: 30px;
+  max-width: 90px;
+}
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);
