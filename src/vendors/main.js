@@ -174,10 +174,10 @@
 		$(".clients.owl-carousel").imagesLoaded().owlCarousel({
 			nav: true, // Show next/prev buttons.
 			items: 2, // The number of items you want to see on the screen.
-			loop: false, // Infinity loop. Duplicate last and first items to get loop illusion.
+			loop: true, // Infinity loop. Duplicate last and first items to get loop illusion.
 			navText: false,
 			margin: 10,
-			autoHeight: true,
+			autoHeight: false,
 			responsive: {
 				// breakpoint from 0 up
 				0: {
