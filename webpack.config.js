@@ -19,7 +19,7 @@ module.exports = {
   target,
   devtool,
   devServer: {
-    port: 3000,
+    port: 3033,
     open: true,
     hot: true,
     watchFiles: [
