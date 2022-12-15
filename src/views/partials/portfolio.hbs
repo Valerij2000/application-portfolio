@@ -17,6 +17,9 @@
               <a class="filter btn btn-sm btn-link" data-group="category_multilandings">Multilandings</a>
             </li>
             <li>
+              <a class="filter btn btn-sm btn-link" data-group="category_service">Web Service</a>
+            </li>
+            <li>
               <a class="filter btn btn-sm btn-link" data-group="category_shops">Internet Shops</a>
             </li>
             <li>
@@ -33,11 +36,16 @@
             </li>
           </ul>
           <div class="portfolio-grid three-columns">
-            {{>../portfolio/viewer title='IQOS' category='Landings' groups='["category_all", "category_landings"]'
-            imgSrc='@img/portfolio/portfolio-iqos.jpg'}}
+            {{>../portfolio/detailed title='IQOS' category='Landings' groups='["category_all", "category_service"]'
+            imgSrc='@img/portfolio/portfolio-iqos.jpg' hrefLink="portfolio-iqos.html"}}
 
-            {{>../portfolio/detailed title='IQOS' category='Landings' groups='["category_all", "category_shops"]'
-            imgSrc='@img/portfolio/portfolio-iqos.jpg' hrefLink="portfolio-1.html"}}
+            {{>../portfolio/detailed title='Procter & Gamble' category='Web Games' groups='["category_all",
+            "category_games"]'
+            imgSrc='@img/portfolio/portfolio-pg.jpg' hrefLink="portfolio-pg.html"}}
+
+            {{>../portfolio/detailed title='Yandex' category='Web Service' groups='["category_all",
+            "category_service"]'
+            imgSrc='@img/portfolio/portfolio-yandex-quiz.jpg' hrefLink="portfolio-yandex-quiz.html"}}
           </div>
         </div>
       </div>
