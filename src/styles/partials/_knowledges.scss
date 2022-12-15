@@ -226,3 +226,35 @@ button.mfp-close:active {
     min-height: auto;
   }
 }
+
+.portfolio-email {
+  @media (min-width: 2500px) {
+    max-height: auto;
+    min-height: auto;
+  }
+
+  @media (max-width: 2500px) {
+    max-height: 500px;
+    min-height: 500px;
+  }
+
+  @media (max-width: 1820px) {
+    max-height: 450px;
+    min-height: 450px;
+  }
+
+  @media (max-width: 1440px) {
+    max-height: 350px;
+    min-height: 350px;
+  }
+
+  @media (max-width: 1024px) {
+    max-height: 300px;
+    min-height: 300px;
+  }
+
+  @media (max-width: 768px) {
+    max-height: auto;
+    min-height: auto;
+  }
+}
