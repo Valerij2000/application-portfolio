@@ -33,14 +33,14 @@
 }
 
 .portfolio-grid {
-  margin-left: -7px;
-  margin-right: -7px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .portfolio-grid figure {
   width: 33.33333%;
   float: left;
-  padding: 7px;
+  padding: 15px;
   position: relative;
   overflow: hidden;
 }
@@ -193,38 +193,6 @@ button.mfp-close:hover {
 
 button.mfp-close:active {
   border: none;
-}
-
-.portfolio-picture {
-  @media (min-width: 2500px) {
-    max-height: auto;
-    min-height: auto;
-  }
-
-  @media (max-width: 2500px) {
-    max-height: 300px;
-    min-height: 300px;
-  }
-
-  @media (max-width: 1820px) {
-    max-height: 200px;
-    min-height: 200px;
-  }
-
-  @media (max-width: 1440px) {
-    max-height: 150px;
-    min-height: 150px;
-  }
-
-  @media (max-width: 1024px) {
-    max-height: 200px;
-    min-height: 200px;
-  }
-
-  @media (max-width: 768px) {
-    max-height: auto;
-    min-height: auto;
-  }
 }
 
 .portfolio-email {
