@@ -10,7 +10,7 @@ html {
   overflow: hidden;
 }
 
-body {
+.body {
   min-width: 360px;
   background-color: #0ba376;
   background: -webkit-gradient(linear, left top, left bottom, from(#0b7080), to(#0ba376));
@@ -61,10 +61,11 @@ body {
   font-size: 16px;
 }
 
-h6 {
+.h6 {
   font-size: 14px;
 }
 
+.link,
 a {
   color: #fff;
   text-decoration: none;
@@ -75,7 +76,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-p {
+.mb-10 {
   margin-bottom: 10px;
 }
 
