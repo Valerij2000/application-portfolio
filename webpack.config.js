@@ -32,7 +32,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: false,
     filename: 'js/[name].[contenthash].js',
-    assetModuleFilename: 'assets/[name][ext]'
+    assetModuleFilename: 'assets/[name][contenthash]'
   },
   plugins: [
     ...hbsPages.map(page => new HtmlWebpackPlugin({
