@@ -40,6 +40,14 @@
   background-size: cover;
 }
 
+[data-id="home"] .section-content {
+  padding: 0;
+}
+
+.main-head {
+  position: absolute;
+}
+
 .section-content {
   background-color: #222;
   padding: 20px;
