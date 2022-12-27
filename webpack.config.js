@@ -28,9 +28,9 @@ module.exports = {
   },
   entry: ['@babel/polyfill', path.resolve(__dirname, 'src', 'webpack/index.js')],
   output: {
-    publicPath: '',
+    publicPath: '', // Don't use pablicPath in production version
     path: path.resolve(__dirname, 'dist'),
-    clean: false,
+    clean: true,
     filename: 'js/[name].[contenthash].js',
     assetModuleFilename: 'assets/[name][contenthash][ext]'
   },
@@ -63,7 +63,7 @@ module.exports = {
       patterns: [{
         from: path.resolve(__dirname, 'src', 'vendors'),
         to: path.resolve(__dirname, 'dist', 'vendors'),
-      }, ],
+      }],
     }),
   ],
   module: {
@@ -119,7 +119,7 @@ module.exports = {
         use: 'webpack-import-glob-loader'
       },
       {
-        test: /\.woff2?$/i,
+        test: /\.(ttf|eot|woff|woff2)$/,
         type: 'asset/resource',
         generator: {
           filename: 'fonts/[name][ext]'
@@ -165,7 +165,8 @@ module.exports = {
   resolve: {
     alias: {
       '@img': path.join(__dirname, 'src', 'img'),
-      '@src': path.join(__dirname, 'src')
+      '@src': path.join(__dirname, 'src'),
+      '@fonts': path.join(__dirname, 'src/fonts')
     },
   },
 };
