@@ -1,5 +1,13 @@
 # WEBPACK
 
+## Attention! Don't use pablicPath in production version
+
+### webpack.config.js
+
+```shell
+publicPath: '',
+```
+
 ## Node.js major v16 or later
 
 ## Сommands
