@@ -24,7 +24,7 @@ var PageTransitions = (function ($, options) {
 				$('section[data-id=' + pageStart + ']').addClass('section-active');
 			}
 		});
-		$('.nav-anim').on("click", function (e) {
+		$('.app-nav').on("click", function (e) {
 			e.preventDefault();
 			if (isAnimating) {
 				return false;
@@ -85,7 +85,7 @@ var PageTransitions = (function ($, options) {
 		navLink = navLink['0'];
 		navLink = $(navLink);
 		if (navLink) {
-			$('ul.main-menu a').removeClass('active');
+			$('ul a').removeClass('active');
 			navLink.addClass('active');
 		}
 	}

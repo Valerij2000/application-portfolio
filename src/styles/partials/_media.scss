@@ -102,7 +102,7 @@
     margin: 30px 0;
   }
 
-  ul.main-menu a {
+  ul.main-menu .nav-anim {
     display: block;
     color: #fff;
     padding: 12px 0;
@@ -110,7 +110,7 @@
     opacity: .7;
   }
 
-  ul.main-menu a.active {
+  ul.main-menu .nav-anim.active {
     opacity: 1;
   }
 

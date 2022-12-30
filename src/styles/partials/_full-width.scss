@@ -27,7 +27,7 @@
     border-radius: 0;
   }
 
-  ul.main-menu a {
+  ul.main-menu .nav-anim {
     border-bottom: 1px solid #333;
   }
 
@@ -62,7 +62,7 @@
     box-shadow: none;
   }
 
-  ul.main-menu a:hover .link-text {
+  ul.main-menu .nav-anim:hover .link-text {
     left: 0;
     right: 0;
   }

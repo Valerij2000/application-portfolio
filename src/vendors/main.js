@@ -79,7 +79,9 @@
 		.on('load', function () { // Load
 			// Animation on Page Loading
 			$(".preloader").fadeOut(800, "linear");
-
+			$('#site-landing').on("click", function () {
+				window.open('https://www.google.com/', '_blank');
+			});
 			// initializing page transition.
 			var ptPage = $('.animated-sections');
 			if (ptPage[0]) {

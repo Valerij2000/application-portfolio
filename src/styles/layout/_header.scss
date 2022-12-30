@@ -30,7 +30,7 @@
     box-shadow: 0 0 30px -5px rgba(0, 0, 0, .15);
   }
 
-  ul.main-menu a {
+  ul.main-menu .nav-anim {
     display: block;
     position: relative;
     color: #b5b6b7;
@@ -42,9 +42,9 @@
     transition: all 0.3s ease-in-out;
   }
 
-  ul.main-menu a.active,
-  ul.main-menu a:focus,
-  ul.main-menu a:hover {
+  ul.main-menu .nav-anim.active,
+  ul.main-menu .nav-anim:focus,
+  ul.main-menu .nav-anim:hover {
     color: #0ba376;
   }
 
@@ -74,7 +74,7 @@
     box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, .22);
   }
 
-  ul.main-menu a:hover .link-text {
+  ul.main-menu .nav-anim:hover .link-text {
     right: 100%;
     visibility: visible;
     opacity: 1;
