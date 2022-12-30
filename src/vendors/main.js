@@ -80,7 +80,7 @@
 			// Animation on Page Loading
 			$(".preloader").fadeOut(800, "linear");
 			$('#site-landing').on("click", function () {
-				window.open('https://www.google.com/', '_blank');
+				window.open('http://v-shumkov.ga/landing', '_blank');
 			});
 			// initializing page transition.
 			var ptPage = $('.animated-sections');

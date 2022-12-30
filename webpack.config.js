@@ -63,6 +63,9 @@ module.exports = {
       patterns: [{
         from: path.resolve(__dirname, 'src', 'vendors'),
         to: path.resolve(__dirname, 'dist', 'vendors'),
+      }, {
+        from: path.resolve(__dirname, 'src', 'landing'),
+        to: path.resolve(__dirname, 'dist', 'landing'),
       }],
     }),
   ],
