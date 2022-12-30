@@ -32,6 +32,10 @@
   cursor: pointer;
 }
 
+.portfolio-filters li:hover {
+  opacity: 1;
+}
+
 .portfolio-grid {
   margin-left: -15px;
   margin-right: -15px;
