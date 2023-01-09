@@ -212,3 +212,15 @@ input[type="submit"]:focus {
 .pr-0 {
   padding-right: 0;
 }
+
+.item-portfolio:nth-child(n + 16) {
+  display: none;
+}
+
+.item-portfolio.is-visible {
+  display: block;
+}
+
+.owl-carousel .item {
+  min-height: 10vmin;
+}

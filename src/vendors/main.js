@@ -9,6 +9,9 @@
 				speed: 450,
 				itemSelector: 'figure'
 			});
+			$('.show-more').on("click", function (e) {
+				portfolio_grid.shuffle('update');
+			});
 			portfolio_filter.on("click", ".filter", function (e) {
 				portfolio_grid.shuffle('update');
 				e.preventDefault();
