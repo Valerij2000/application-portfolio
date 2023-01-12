@@ -1,7 +1,7 @@
 export default (function () {
   const showMore = document.querySelector('.show-more');
   const productsLength = document.querySelectorAll('.item-portfolio').length;
-  let items = 15;
+  let items = 27;
 
   showMore.addEventListener('click', () => {
     items += 6;

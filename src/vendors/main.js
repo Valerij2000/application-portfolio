@@ -83,7 +83,7 @@
 			// Animation on Page Loading
 			$(".preloader").fadeOut(800, "linear");
 			$('#site-landing').on("click", function () {
-				window.open('http://v-shumkov.ga/landing', '_blank');
+				window.open('http://v-shumkov.site/landing', '_blank');
 			});
 			// initializing page transition.
 			var ptPage = $('.animated-sections');
